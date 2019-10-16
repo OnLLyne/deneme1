@@ -1,0 +1,49 @@
+<?php 
+
+	echo "Ömer Hacıahmed"; echo "<br>";
+
+	echo "Merhaba Dünya!"; echo "<br>";
+
+	echo "Hoşgeldiniz"."<br>";
+
+	$sayi1=25;
+	echo $sayi1; echo "<br>";
+
+	$sayi1=$sayi1+10; 
+	echo $sayi1;
+
+	echo "<br>";
+	$ad="Ömer";
+	$soyad="Hacıahmed";
+	echo "Benim Adım Soyadım: ".$ad." ".$soyad."<br>";
+	echo "<br>";
+
+	echo "Bilgilerim: "; echo "Bursa'da doğdum. Lise 4 öğrencisiyim."; echo "<br>";
+	$adi="Ömer";
+	echo "Ad: ".$adi; echo "<br>";
+	$soyadi="Hacıahmed";
+	echo "Soyad: ".$soyadi; echo "<br>"; echo "<br>";
+
+	$sayi3=10;
+	$sayi4=5;
+	$toplama=$sayi3+$sayi4;
+	echo $sayi3." + ".$sayi4." = ". $toplama; echo "<br>";
+
+	$cikarma=$sayi3-$sayi4;
+	echo $sayi3." - ".$sayi4." = ". $cikarma; echo "<br>";
+
+	$carpma=$sayi3*$sayi4;
+	echo $sayi3." * ".$sayi4." = ". $carpma; echo "<br>"; 
+
+	$bolme=$sayi3/$sayi4;
+	echo $sayi3." / ".$sayi4." = ". $bolme; echo "<br>";
+
+ 	echo "<br>"; echo "<br>";
+	echo "Atama ve İşlem Operatörleri"; echo "<br>";
+	$atamaa=50;
+	echo $atamaa+=2; echo "<br>";
+	echo $atamaa-=10; echo "<br>";
+	echo $atamaa*=2; echo "<br>";
+	echo $atamaa/=3; echo "<br>"; echo "<br>";
+
+ ?>
