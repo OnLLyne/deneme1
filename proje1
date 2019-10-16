@@ -23,7 +23,7 @@
 	echo "Ad: ".$adi; echo "<br>";
 	$soyadi="Hacıahmed";
 	echo "Soyad: ".$soyadi; echo "<br>"; echo "<br>";
-	
+
 	$sayi3=10;
 	$sayi4=5;
 	$toplama=$sayi3+$sayi4;
@@ -53,4 +53,208 @@
 	echo ++$i; echo "<br>";
 	echo --$i;
 
- ?>
+	echo "<br>"; echo "<br>";
+	echo "String Foksiyonları ve Kullanımları"."<br>";
+	$yazi="Benim adım Ömer."."<br>";
+
+	echo $yazi;
+
+	echo strtolower($yazi); // Metni ufak harfler ile yazar.
+
+	echo strtoupper($yazi); // Metnin tamamını büyük harfler ile yazar.
+
+	echo ucwords($yazi); // Metnin ilk harflerini büyütür.
+
+	echo ucfirst($yazi); // Metnin ilk harfini büyütür.
+
+	echo strlen($yazi); echo ""; echo "<br>";// Metin kaç harfli olduğunu söyler.
+
+	echo strstr($yazi, "adım"); // "Benim adım Ömer değil de hangisinden başlamasını istiyor isek oradan başlatır metini."	
+
+	echo str_replace("Ömer", "Omer", "$yazi"); // Search: Değiştireceğimiz key(array)lime. Replace: Yerine ne gelmesini istiyoruz? Subject: Hangi değişken?
+
+	echo substr($yazi, 0,11); // String: Değişken Start: Başlangıç ve Bitiş karakter sayısı.
+
+	echo "<br>";
+	echo "<br>";
+
+	echo "Diziler";
+	echo "<br>";
+	$dizi=array("Ömer","Hacıahmed",1,2);
+	echo $dizi[0]; // Parantez içerisine yazdığımız harf array içerisinde bulunanları alır.
+	echo "<br>";
+	print_r($dizi);
+
+	echo "<br>";
+
+	$omer=array(5,2,4,6,3,21,7,53);
+	$omerr=array("ömer","hacıahmed","stajyer");
+	echo "Omer dizisinde bulunan eleman sayısı: ".count($omer);
+	echo "<br>";
+	print_r($omer); // Parantez içerisine yazdığımız harf array içerisinde bulunanları alır.
+
+	echo "<br>";
+	rsort($omer); // Büyükten küçüğe doğru sıralamamıza yarar.
+	print_r($omer);
+	echo "<br>";
+
+	echo max($omer); // Metindeki en büyük sayıyı gösterir.
+
+	echo "<br>";
+
+	echo min($omer); // Metindeki en küçük sayıyı gösterir
+
+	echo "<br>";
+
+	echo in_array(53, $omer); // Metinde yazdığımız sayı veya kelimeleri yazarak kaç kere yazıldığını bulmamıza yarar.
+
+	echo "<br>";
+
+	echo print_r($omerr);
+	echo "<br>";
+	echo "<br>";
+	//if - else if - else koşulları
+	/* == Eşit ise.
+	   < küçük ise.
+	   > büyük ise.
+	   >= küçük ya da eşit ise
+	   <= büyük ya da eşit ise
+	   != eşit değilse
+	 */
+	$omers=4;
+	$omers1=7;
+	if ($omers==4 and $omers1==7) {
+	echo "Evet her iki sayıda doğru.";			
+	}
+
+	else if ($omers1==6) {
+		echo "Aralarından bir tanesi doğru olabilir.";
+	}
+
+	else {
+
+		echo "Yanlış";
+	}
+
+
+
+		echo "<br>";
+		$omerz=1;
+		$omerx=2;
+
+	if ($omerz==3 and $omerx==2) {
+		
+	echo "Her iki sayıyıda doğru bildiniz.";
+	}
+
+	else if ($omerx==2) {
+	echo "Aralarından biri doğru olabilir";
+	}
+
+	else
+
+	{
+		echo "Yanlış.";
+	}
+
+
+	echo "<br>";
+	echo "<br>";
+	echo "Sabit değer oluşturma.";  echo "<br>";
+
+	define("adim", "Ömer Hacıahmed");
+	echo adim;
+
+	 echo "<br>";
+	define("menşei", "Türkiye");
+	echo menşei;
+
+	echo "<br>";
+	echo "<br>";
+
+	echo "Switch Case koşulları";
+	echo "<br>";
+	$notpuani=3;
+
+	switch ($notpuani) {
+		case '5':
+			echo "Takdir aldınız tebrikler.";
+			break;
+		case '4':
+			echo "Teşekkür aldınız tebrikler.";
+			break;
+		case '3':
+			echo "Takdir veya Teşekkür belgesi alamadınız maalesef.";
+				break;
+		case '2':
+			echo "Daha çok çalış sınıfta kalmıyorsun bu sene.";
+					break;
+		default:
+			echo "Sınıfta kaldınız... Bir dahaki sefere.";
+			break;
+	}
+
+	echo "<br>";
+	echo "<br>";
+
+	//Girilen üç sayının en büyüğünü bulan program.
+	echo "Girilen üç sayının en büyüğünü bulan program.";echo "<br>";
+	$say1=10;
+	$say2=15;
+	$say3=20;
+
+	if ($say1>$say2 and $say1>$say3) {
+		
+		echo "Sayı 1 sayısı girilen diğer sayılardan daha büyüktür.";
+	}
+	else if ($say2>$say1 and $say2>$say3) {
+		echo "Sayı 2 sayısı girilen diğer sayılardan daha büyüktür.";
+	}
+	else
+	{
+		echo "Sayı 3 sayısı girilen diğer sayılardan daha büyüktür.";
+	}
+
+	echo "<br>";
+	echo "<br>";
+
+	// Girilen sayı tek mi? Çift mi?
+	echo "Girilen sayı tek mi? Çift mi?";echo "<br>";
+	$tekcift=2;
+
+	if ($tekcift%2==0) {
+		echo "$tekcift Girilen sayı çifttir.";
+	}
+
+	else {
+
+		echo "$tekcift Girilen sayı tektir.";
+	}
+
+	echo "<br>";
+	// For Döngüsü.
+	echo "For Döngüsü";
+	echo "<br>";
+
+	for ($i=1; $i <=5 ; $i++) { 
+		echo $i;
+	}
+
+	echo "<br>";
+	echo "<br>";
+
+	//For döngüsü ile çarpma tablosu yapımı.
+	echo "For döngüsü ile çarpma tablosu yapımı."; echo "<br>";
+
+
+	for ($i=1; $i<=10 ; $i++) { 
+
+		for ($x=1; $x<=10 ; $x++) { 
+
+			echo "$i x $x = "; echo $i*$x; echo "<br>";
+
+		}
+
+		echo "<br>";
+	}
+ ?>	
