@@ -257,4 +257,120 @@
 
 		echo "<br>";
 	}
+	// Sayıların çift mi tek mi olduğunu yazan program.
+		echo "Girilen sayı Çift mi Tek mi?"; echo "<br>";
+		$tekcift=3;
+
+		if ($tekcift%2==0) {
+		echo "$tekcift Girilen sayı çifttir.";
+	}
+
+		else
+	{
+		echo "$tekcift Girilen sayı tektir.";
+	}
+
+		echo "<br>";
+//---------------------------------------------------------\\
+		echo "<br>";
+	// For döngüsü.\\ // 1'den 5'e kadar yazdırır. \\
+		echo "For Döngüsü"; echo "<br>";
+		for ($i=1; $i <=5 ; $i++) { 
+			echo $i;
+		}
+		echo "<br>";
+//---------------------------------------------------------\\
+		echo "<br>";
+	// Switch Case kullanımı. \\
+		echo "Switch Case kullanımı"; echo "<br>";
+		switch (1) {
+			case '5':
+		echo "1 Yıl 23 gün sonra emekli olabileceksiniz.";
+			break;
+			case '4':
+		echo "2 Yıl 1 gün sonra emekli olabileceksiniz.";
+				break;
+			case '3':
+		echo "3 Yıl 49 gün sonra emekli olabileceksiniz.";
+				break;
+			case '2':
+		echo "4 Yıl 192 gün sonra emekli olabileceksiniz.";
+				break;
+			case '1':
+		echo "7 Yıl 93 gün sonra emekli olabileceksiniz";
+				break;
+			default:
+		echo "Maalesef geç yaşta emekli olacaksınız.";
+			break;
+		}
+		echo "<br>";
+//---------------------------------------------------------\\
+		echo "<br>";
+	// Girilen üç sayının en büyüğünü bulan program. \\
+		echo "Girilen üç sayının en büyüğünü bulan program"; echo "<br>";
+		$s1=10;
+		$s2=11;
+		$s3=12;
+		if ($s1 > $s2 and $s1 > $s3) {
+		echo "Sayı 1 sayısı girilen diğer rakamlardan daha büyüktür.";
+		}
+		else if ($s2 > $s1 and $s2 > $s3) {
+		echo "Sayı 2 sayısı girilen diğer rakamlardan daha büyüktür.";
+		}
+		else
+		{
+		echo "Sayı 3 sayısı girilen diğer rakamlardan daha büyüktür.";
+		}
+		echo "<br>";
+//---------------------------------------------------------\\
+		echo "<br>";
+		// For döngüsü ile birden fazla artış ve eksiltme işlemleri. \\
+		echo "For döngüsü ile birden fazla artış ve eksiltme işlemleri"; echo "<br>";
+		echo "0'dan 100'e kadar yazacak. +2 şeklinde artıracak."; echo "<br>"; echo "<br> ";
+		for ($i=0; $i <=100 ; $i+=2) { 
+			echo $i." ";
+		}
+		echo "<br>";
+		echo "<br>";
+		echo "200'den 0'a kadar yazacak. -2 şeklinde azaltacak."; echo "<br>"; echo "<br>";
+		for ($p=200; $p >=0 ; $p-=5) { 
+			echo $p." ";
+		}
+		echo "<br>";
+
+//---------------------------------------------------------\\
+		echo "<br>";
+		// For döngüsü ile girilen sayı aralığında arttırma işlemi. \\
+		echo "For döngüsü ile girilen sayı aralığında arttırma işlemi. 100'den 200'e +2 şeklinde artarak ilerler."; echo "For döngüsü ile girilen sayı aralığında arttırma işlemi. 100'den 200'e şeklinde artarak ilerler.";
+		$i1=100;
+		$i2=200;
+		$artan=2;
+
+		for ($i1; $i1 <=$i2 ; $i1+=$artan) { 
+			echo $i1." ";
+		}
+		echo "<br>";
+//---------------------------------------------------------\\
+		echo "<br>";
+		// Rand fonksiyonu ve eğlenceli bir tahmin programı. \\
+		echo "Rand fonksiyonu ve eğlenceli bir tahmin programı."; echo "<br>";
+		$artan=rand(1,10);
+		if ($artan >=5 ) {
+		echo "Tebrikler bulunan sayı $artan olduğu için kazandınız.";
+		}
+		else
+		{
+			echo "Maalesef bulunan sayı $artan olduğu için kaybettiniz.";
+		}
+
+		echo "<br>";
+		echo "<br>";
+//---------------------------------------------------------\\
+		// Foreach döngüsü ve diziler ile kullanımı. \\
+		echo "Foreach döngüsü ve diziler ile kullanımı"; echo "<br>";
+		$sayi=array("Ömer", "Hacıahmed", "Sayılar", "Sayıcıklar");
+		foreach ($sayi as $key => $deger) {
+		echo "$key .sırada $deger var.". " 	"  ; echo "<br>";
+		echo "<br>";
+		}
  ?>	
